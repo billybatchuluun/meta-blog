@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-export const AllBlogPost = () => {
+export const AllBlog = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -14,19 +14,6 @@ export const AllBlogPost = () => {
       <div className="flex flex-col justify-center mb-8 gap-8">
         <div>
           <h4 className="font-bold text-2xl">All Blog Post</h4>
-        </div>
-        <div className="flex gap-7.5 justify-between">
-          <div className="flex gap-5">
-            <p>All</p>
-            <p>design</p>
-            <p>Travel</p>
-            <p>Fashion</p>
-            <p>Technology</p>
-            <p>Branding</p>
-          </div>
-          <div className="flex items-center">
-            <p className="font-bold text-xs text-title">View All</p>
-          </div>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-5">

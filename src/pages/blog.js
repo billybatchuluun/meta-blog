@@ -1,11 +1,7 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { AllBlogPost } from "@/components/AllBlogPost";
-
-const inter = Inter({ subsets: ["latin"] });
+import { AllBlog } from "@/components/AllBlog";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);
@@ -17,12 +13,12 @@ export default function Home() {
   }, []);
 
   console.log("articles", articles);
+
   return (
-    <main className="flex flex-col w-screen py-8 px-[350px]">
-      <section className="flex flex-col gap-20">
+    <main className="flex w-screen py-8 px-[350px]">
+      <section>
         <Navbar />
-        <Hero />
-        <AllBlogPost />
+        <AllBlog />
       </section>
     </main>
   );

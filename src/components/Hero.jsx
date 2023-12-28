@@ -27,7 +27,7 @@ export const Hero = () => {
 
   return (
     <section>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col  items-center">
         {article && (
           <div className="">
             <img className="w-[1216px]" src={article.cover_image} alt="" />

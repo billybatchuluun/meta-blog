@@ -18,8 +18,8 @@ export default function Home() {
 
   console.log("articles", articles);
   return (
-    <main className="flex flex-col w-screen py-8 px-[350px]">
-      <section className="flex flex-col gap-20">
+    <main className="flex  w-screen py-8 justify-center">
+      <section className="flex flex-col  gap-20">
         <Navbar />
         <Hero />
         <AllBlogPost />

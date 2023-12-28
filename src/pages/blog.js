@@ -15,8 +15,8 @@ export default function Home() {
   console.log("articles", articles);
 
   return (
-    <main className="flex w-screen py-8 px-[350px]">
-      <section>
+    <main className="flex w-screen py-8 justify-center">
+      <section className="flex flex-col ">
         <Navbar />
         <AllBlog />
       </section>

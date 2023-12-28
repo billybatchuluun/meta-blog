@@ -32,7 +32,7 @@ export const AllBlogPost = () => {
       <div className="grid grid-cols-3 gap-5">
         {articles.map((article) => {
           return (
-            <div className="flex flex-col flex-start  p-4 gap-4">
+            <div className="flex flex-col  p-4 gap-4">
               <div>
                 <img
                   className="w-[360px] h-[249px] rounded-md"

@@ -11,8 +11,8 @@ export const AllBlog = () => {
   }, []);
   return (
     <section className="flex flex-col justify-center my-24">
-      <div className="flex flex-col justify-center mb-8 gap-8">
-        <div>
+      <div className="flex flex-col  mb-8 gap-8">
+        <div className="flex my-12">
           <h4 className="font-bold text-2xl">All Blog Post</h4>
         </div>
       </div>
@@ -39,12 +39,26 @@ export const AllBlog = () => {
                 </p>
               </div>
               <div className="text-2xl w-[344px]">{article.title}</div>
-              <div className="flex items-center text-[#97989F] text-base">
-                <p>
-                  {article.readable_publish_date +
-                    ", " +
-                    new Date(article.published_at).getFullYear()}
-                </p>
+              <div className="flex items-center text-[#97989F] text-base gap-5">
+                <div className="flex gap-3 justify-center items-center">
+                  <div>
+                    <img
+                      className="w-9 h-9 rounded-full"
+                      src={article.user.profile_image}
+                      alt="coverpicture"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-base ml-3 ">{article.user.name}</p>
+                  </div>
+                </div>
+                <div>
+                  <p>
+                    {article.readable_publish_date +
+                      ", " +
+                      new Date(article.published_at).getFullYear()}
+                  </p>
+                </div>
               </div>
             </div>
           );

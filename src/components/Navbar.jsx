@@ -11,11 +11,15 @@ export const Navbar = () => {
           <div className="flex gap-10 justify-center items-center ml-[118px] w-[667px]">
             <a href="/">Home</a>
             <a href="blog">Blog</a>
-            <a href="">Contact</a>
+            <a href="contact">Contact</a>
           </div>
-          <div className="flex py-2 px-4 gap-3 items-center bg-[#F4F4F5]">
+          <div className="flex py-2 px-4 gap-3 items-center bg-[#F4F4F5] rounded-md">
             <div>
-              <input type="search" placeholder="Search"></input>
+              <input
+                type="search"
+                placeholder="Search"
+                className="bg-[#F4F4F5] "
+              ></input>
             </div>
             <div>
               <img src="./search-outline.svg"></img>

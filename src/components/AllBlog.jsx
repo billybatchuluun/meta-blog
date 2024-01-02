@@ -16,7 +16,7 @@ export const AllBlog = () => {
           <h4 className="font-bold text-2xl">All Blog Post</h4>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 `grid-rows-3` gap-5">
         {articles.map((article) => {
           return (
             <div className="flex flex-col flex-start  p-4 gap-4">

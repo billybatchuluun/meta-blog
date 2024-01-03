@@ -30,8 +30,12 @@ export const Hero = () => {
       <div className="flex flex-col  relative items-center">
         {article && (
           <div className="">
-            <img className="w-[1216px]" src={article.cover_image} alt="" />
-            <div className="flex p-10 flex-col gap-6 absolute bottom-1 left-1 bg-white w-[598px] rounded-xl">
+            <img
+              className="w-[1216px] rounded-lg"
+              src={article.cover_image}
+              alt=""
+            />
+            <div className="flex p-10 flex-col gap-6 absolute bottom-1 left-2 bg-white w-[598px] rounded-xl">
               <div>
                 {article?.tag_list.slice(0, 1).map((tags) => {
                   return (

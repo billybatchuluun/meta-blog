@@ -19,7 +19,10 @@ export const AllBlog = () => {
       <div className="grid grid-cols-3 `grid-rows-3` gap-5">
         {articles.map((article) => {
           return (
-            <div className="flex flex-col flex-start  p-4 gap-4">
+            <a
+              href={`${article.id}`}
+              className="flex flex-col flex-start  p-4 gap-4"
+            >
               <div>
                 <img
                   className="w-[360px] h-[249px] rounded-md"
@@ -60,7 +63,7 @@ export const AllBlog = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </a>
           );
         })}
       </div>

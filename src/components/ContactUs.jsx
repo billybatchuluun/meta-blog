@@ -44,8 +44,8 @@ export const ContactUs = () => {
           <div>
             <p className="text-xl">Leave a Message</p>
           </div>
-          <div>
-            <div className="flex gap-3">
+          <div className="flex flex-col gap-5">
+            <div className="flex gap-5">
               <div>
                 <input
                   type="text"
@@ -59,6 +59,27 @@ export const ContactUs = () => {
                   placeholder="Your email"
                   className="flex pt-2 pr-2 pb-2 pl-5 w-[225px] h-[38px] border-[1px] border-[#DCDDDF] rounded-md"
                 />
+              </div>
+            </div>
+            <div className="flex flex-col gap-5">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Sublect"
+                  className="flex pt-2 pr-2 pb-2 pl-5 w-[478px] h-[38px] border-[1px] border-[#DCDDDF] rounded-md"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Write a message"
+                  className="flex pt-2 pr-2 pb-2 pl-5 w-[478px] h-[134px] border-[1px] border-[#DCDDDF] rounded-md"
+                />
+              </div>
+              <div className="flex bg-blue ">
+                <button className="bg-[#4B6BFB] text-white py-[10px] px-4 rounded-xl">
+                  Send Message
+                </button>
               </div>
             </div>
           </div>

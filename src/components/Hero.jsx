@@ -32,19 +32,25 @@ export const Hero = () => {
           <div className="">
             <img
               className="w-[1216px] rounded-lg"
-              src={article.cover_image}
+              src={
+                article.cover_image
+                  ? article.cover_image
+                  : "https://picsum.photos/536/354"
+              }
               alt=""
             />
             <div className="flex p-10 flex-col gap-6 absolute bottom-1 left-2 bg-white w-[598px] rounded-xl">
-              <div>
+              <div className="flex flex-col gap-6">
                 {article?.tag_list.slice(0, 1).map((tags) => {
                   return (
                     <>
-                      <div className="py-1  text-white flex flex-col items-center justify-center bottom-20 left-7 text-base bg-[#4B6BFB] w-20 rounded-lg">
-                        {tags}
+                      <div className="flex flex-col gap-4">
+                        <div className="py-1  text-white flex  items-center justify-center bottom-20 left-7 text-base bg-[#4B6BFB] w-20 rounded-lg">
+                          {tags}
+                        </div>
+                        <div className="text-4xl">{article.title}</div>
                       </div>
-                      <div className="text-4xl">{article.title}</div>
-                      <div>
+                      <div className="">
                         <p>
                           {article.readable_publish_date +
                             ", " +

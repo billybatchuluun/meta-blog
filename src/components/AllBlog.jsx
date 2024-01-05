@@ -26,7 +26,11 @@ export const AllBlog = () => {
               <div>
                 <img
                   className="w-[360px] h-[249px] rounded-md"
-                  src={article.cover_image}
+                  src={
+                    article.cover_image
+                      ? article.cover_image
+                      : "https://picsum.photos/536/354"
+                  }
                   alt="coverpicture"
                 ></img>
               </div>

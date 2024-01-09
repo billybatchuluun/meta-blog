@@ -9,6 +9,7 @@ import { HeroTest } from "@/components/HeroTest";
 import { LoadMore } from "@/components/LoadMore";
 import { About } from "@/components/About";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {

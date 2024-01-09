@@ -21,7 +21,7 @@ export const AllBlog = () => {
           return (
             <a
               href={`${article.id}`}
-              className="flex flex-col flex-start  p-4 gap-4"
+              className="flex flex-col flex-start  p-4 gap-4 border-2 rounded-lg"
             >
               <div>
                 <img

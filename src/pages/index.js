@@ -1,9 +1,12 @@
+import React from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { AllBlogPost } from "@/components/AllBlogPost";
 import { Trending } from "@/components/Trending";
 import { LoadMore } from "@/components/LoadMore";
 import { About } from "@/components/About";
+
+
 
 export default function Home() {
   return (
